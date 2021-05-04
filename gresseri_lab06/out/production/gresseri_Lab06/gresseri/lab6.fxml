@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="476.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gresseri.Lab6Controller">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="19.0" prefWidth="600.0" spacing="1.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="110.0" text="URL" textAlignment="RIGHT" />
+            <TextField fx:id="url" prefHeight="25.0" prefWidth="364.0" />
+            <Button fx:id="analyze" mnemonicParsing="false" onAction="#analyze" prefHeight="25.0" prefWidth="168.0" text="Analyze" />
+         </children>
+      </HBox>
+      <HBox prefHeight="2.0" prefWidth="600.0" spacing="1.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="96.0" text="Size" />
+            <TextField fx:id="size" disable="true" prefHeight="25.0" prefWidth="124.0" />
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="167.0" text="Download Time" />
+            <TextField fx:id="downloadTime" disable="true" prefHeight="25.0" prefWidth="208.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="6.0" prefWidth="600.0" spacing="1.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="96.0" text="Port" />
+            <TextField fx:id="port" disable="true" prefHeight="25.0" prefWidth="124.0" />
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="169.0" text="Host" />
+            <TextField fx:id="host" disable="true" prefHeight="25.0" prefWidth="210.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="0.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="101.0" text="Timeout" />
+            <TextField fx:id="timeout" prefHeight="25.0" prefWidth="355.0" />
+            <Button fx:id="set" mnemonicParsing="false" onAction="#set" prefHeight="25.0" prefWidth="156.0" text="Set" />
+         </children>
+      </HBox>
+      <Label fx:id="processedInfo" prefHeight="77.0" prefWidth="600.0" />
+   </children>
+</VBox>
